@@ -1,0 +1,10 @@
+---
+instances: 1
+memory: 1G
+applications:
+  - name: aggservice-iot-poc
+    host: aggservice-iot-poc
+    path: target/aggregatorservice-1.0-SNAPSHOT.jar
+    env:
+      SPRING_PROFILES_ACTIVE: pcf
+      CF_TARGET: https://api.run.pez.pivotal.io
